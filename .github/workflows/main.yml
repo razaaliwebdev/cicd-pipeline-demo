@@ -12,6 +12,6 @@ jobs:
       - uses: action/checkout@v5
       - name: My First Step
 
-      run: | 
-        echo "Hello world from the CiCd Pipeline in GitHub Actions"
-        uname -a
+        run: | 
+          echo "Hello world from the CiCd Pipeline in GitHub Actions"
+          uname -a
