@@ -1,0 +1,19 @@
+name: CICD Pipeline in GitHub Actions
+
+on:
+  push:
+    branches: main
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+  steps:
+    - uses: actions/checkout@v5
+
+    - name: My first step
+        run: |
+          echo: "This is DevOps Course"
+          uname -a
