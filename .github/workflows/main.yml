@@ -1,4 +1,4 @@
-name: CICD Pipeline in GitHub Actions
+name: CiCd Pipeline in GitHub Actions
 
 on:
   push:
@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
-
+      - uses: action/checkout@v5
       - name: My First Step
 
-        run: |
-          echo "This is the DevOps GitHub Actions course"
-          uname -a
+      run: | 
+        echo "Hello world from the CiCd Pipeline in GitHub Actions"
+        uname -a
