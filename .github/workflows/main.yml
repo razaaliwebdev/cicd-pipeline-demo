@@ -15,5 +15,5 @@ jobs:
 
       - name: My first step
           run: |
-            echo:"This is DevOps Course"
+            echo "This is DevOps Course"
             uname -a
