@@ -22,5 +22,5 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker hello world
+          docker run hello world
     
