@@ -16,11 +16,11 @@ jobs:
           uname -a
 
       - name: Check the Docker installation
-         run: |
+        run: |
            docker
            docker images
 
       - name: Run Docker Container
-         run: |
+        run: |
           docker hello world
     
