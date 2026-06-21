@@ -1,17 +1,17 @@
-name: CiCd Pipeline in GitHub Actions
+name: CICD Pipeline in GitHub Actions
 
 on:
   push:
     branches: [main]
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: action/checkout@v5
+      - uses: actions/checkout@v5
       - name: My First Step
-
-        run: | 
-          echo "Hello world from the CiCd Pipeline in GitHub Actions"
+        run: |
+          echo "Hello World from the GitHub Actions"
           uname -a
+    
