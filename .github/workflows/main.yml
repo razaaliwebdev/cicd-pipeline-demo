@@ -10,8 +10,17 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
-      - name: My First Step
+      - name: Initialize the Repo
         run: |
           echo "Hello World from the GitHub Actions"
           uname -a
+
+      - name: Check the Docker installation
+         run: |
+           docker
+           docker images
+
+      - name: Run Docker Container
+         run: |
+          docker hello world
     
